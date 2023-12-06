@@ -1,3 +1,5 @@
+/*All*/
+
 a {
     text-decoration: none;
 }
@@ -13,6 +15,9 @@ body {
     font-family: Roboto, sans-serif;
     color: var(--head-color);
 }
+
+/*Header*/
+
 .header-logo {
 color: #000;
     font-family: Raleway;
@@ -55,6 +60,9 @@ color: var(--selection-color);
 .header-contacts a:hover {
     color: var(--selection-color);
 }
+
+/*index.html*/
+
 .base{
     background-color: #2F303A;
 }
@@ -145,6 +153,49 @@ color: var(--selection-color);
         line-height: 1.2;
         letter-spacing: 0.48px;
 }
+
+/*portfolio.html*/
+
+.portfolio-button {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.625;
+    letter-spacing: 0.48px;
+    background-color: #F5F4FA;
+    cursor: pointer;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--selection-color);
+    color: #FFFFFF;
+}
+
+.portfolio-head {
+    color: var(--head-color);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
+}
+
+.portfolio-text {
+    color: var(--text-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875;
+    letter-spacing: 0.48px;
+}
+
+/*Footer*/
+
 footer {
     background-color: #2F303A;
 }
@@ -180,37 +231,4 @@ color: #FFF;
         font-weight: 400;
         line-height: 1.71429;
         letter-spacing: 0.42px;
-}
-.portfolio-button {
-        text-align: center;
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.625;
-        letter-spacing: 0.48px;
-        background-color: #F5F4FA;
-        cursor: pointer;
-}
-.portfolio-button:hover, .portfolio-button:focus {
-    background-color: var(--selection-color);
-    color: #FFFFFF;
-}
-.portfolio-head {
-    color: var(--head-color);
-        font-family: Roboto;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 2;
-        letter-spacing: 1.08px;
-}
-.portfolio-text {
-    color: var(--text-color);
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.875;
-        letter-spacing: 0.48px;
 }
