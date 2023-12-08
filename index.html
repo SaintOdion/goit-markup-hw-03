@@ -19,17 +19,19 @@
   </head>
   <body>
     <header>
-      <nav class="head-con container">
-        <a class="header-logo" lang="en" href="#"><span>Web</span>Studio</a>
-        <ul class="header-navigation">
-          <li class="item">
-            <a class="link current" href="./index.html">Студія</a>
-          </li>
-          <li class="item">
-            <a class="link" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="item"><a class="link" href="#">Контакти</a></li>
-        </ul>
+      <div class="head-container container">
+        <nav class="head-con">
+          <a class="header-logo" lang="en" href="#"><span>Web</span>Studio</a>
+          <ul class="header-navigation">
+            <li class="item">
+              <a class="link current" href="./index.html">Студія</a>
+            </li>
+            <li class="item">
+              <a class="link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="item"><a class="link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
         <ul class="header-contacts">
           <li class="item">
             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -38,7 +40,7 @@
             <a href="tel:380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -48,8 +50,8 @@
         </div>
       </section>
       <section class="advantages section">
-        <h2 hidden>second</h2>
         <div class="container">
+          <h2 class="visually-hidden">second</h2>
           <ul class="advantages-items">
             <li class="item">
               <h3 class="advantages-head">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -127,8 +129,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Ігор Дем'яненко</h3>
-              <p class="team-profession" lang="en">Product Designer</p>
+              <div class="team-box">
+                <h3 class="team-name">Ігор Дем'яненко</h3>
+                <p class="team-profession" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -138,8 +142,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Ольга Рєпіна</h3>
-              <p class="team-profession" lang="en">Frontend Developer</p>
+              <div class="team-box">
+                <h3 class="team-name">Ольга Рєпіна</h3>
+                <p class="team-profession" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -149,8 +155,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Микола Тарасов</h3>
-              <p class="team-profession" lang="en">Marketing</p>
+              <div class="team-box">
+                <h3 class="team-name">Микола Тарасов</h3>
+                <p class="team-profession" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="item">
               <img
@@ -160,8 +168,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Михайло Єрмаков</h3>
-              <p class="team-profession" lang="en">UI Designer</p>
+              <div class="team-box">
+                <h3 class="team-name">Михайло Єрмаков</h3>
+                <p class="team-profession" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>

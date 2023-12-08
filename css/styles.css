@@ -20,6 +20,9 @@ h1, h2, h3, h4, p, ul {
     margin: 0;
     padding: 0;
 }
+img{
+    display: block;
+}
 .container {
     width: 1200px;
     margin-left: auto;
@@ -30,10 +33,19 @@ h1, h2, h3, h4, p, ul {
 .section{
     padding-bottom: 94px;
 }
+.visually-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+}
 /*Header*/
 
 header{
     border-bottom: 1px solid #ECECEC;
+}
+.head-container{
+    display: flex;
+    align-items: center;
 }
 .head-con{
     display: flex;
@@ -101,6 +113,7 @@ color: var(--selection-color);
 /*index.html*/
 
 .hero{
+        padding: 200px 0;
         text-align: center;
         background-color: #2F303A;
 }
@@ -143,7 +156,9 @@ border: var(--selection-color);
 }
 .advantages-items{
     display: flex;
-    justify-content: space-between;
+}
+.advantages-items .item:not(:last-child){
+    margin-right: 30px;
 }
 .advantages-items .item{
     width: 270px;
@@ -210,8 +225,10 @@ border: var(--selection-color);
 .team-items .item{
     border-radius: 0px 0px 4px 4px;
 }
+.team-box{
+padding: 30px 0;
+}
 .team-name {
-    margin-top: 30px;
         text-align: center;
         font-family: Roboto;
         font-size: 16px;
@@ -222,7 +239,7 @@ border: var(--selection-color);
 }
 .team-profession {
     margin-top: 10px;
-    margin-bottom: 30px;
+
     color: var(--text-color);
         text-align: center;
         font-family: Roboto;
@@ -273,6 +290,7 @@ border: var(--selection-color);
 }
 
 .portfolio-border{
+    padding: 20px 24px;
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;;
@@ -286,7 +304,7 @@ border: var(--selection-color);
 }
 .portfolio-head {
     padding-top: 20px;
-    margin: 0 24px 4px;
+    margin-bottom: 4px;
     color: var(--head-color);
     font-family: Roboto;
     font-size: 18px;
@@ -297,7 +315,6 @@ border: var(--selection-color);
 }
 
 .portfolio-text {
-    margin: 0 24px 20px;
     color: var(--text-color);
     font-family: Roboto;
     font-size: 16px;
@@ -310,13 +327,12 @@ border: var(--selection-color);
 /*Footer*/
 
 footer {
-    height: 251px;
+    padding: 60px 0;
     background-color: #2F303A;
 }
 .footer-logo {
     display: inline-block;
-    margin-top: 60px;
-    margin-bottom: 28px;
+    
     color: #FFF;
     font-family: Raleway;
     font-size: 26px;
@@ -328,6 +344,9 @@ footer {
 
 .footer-logo span {
     color: var(--selection-color);
+}
+.footer-address{
+    margin-top: 28px;
 }
 .footer-items .item:not(:last-child){
     margin-bottom: 12px;
